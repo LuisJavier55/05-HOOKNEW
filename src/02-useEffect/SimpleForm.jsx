@@ -1,4 +1,6 @@
-import { useCallback, useEffect, useState } from "react"
+// eslint-disable-next-line no-unused-vars
+import { useEffect, useState } from "react"
+import { Message } from "./Message";
 
 //componenete 
 export const SimpleForm = () => {
@@ -21,21 +23,11 @@ export const SimpleForm = () => {
     })
 
   }
+//UseEffect -- se ejecutara cuando email se esta modificando o se hace un cambio en la renderizacion 
+  // useEffect(()=>{  
+  //   console.log("Se ejecuta email al renderizar ")
+  // },[email])
 
-  useEffect(()=>{ //UseEffect 
-    console.log("Se ejecuta email al renderizar ")
-  },[email])
-
-
-  useEffect(() =>{
-console.log();
-
-    return () =>{
-
-    }
-
-  },)
-  
   return (
     <>
        
@@ -59,6 +51,12 @@ console.log();
         name="email"
         value={email}
         onChange={onInputCange}/>
+
+
+    {
+      username === 'Luis1' && <Message/> //condicion if, solo devolvera verdadero por las &&
+    }
+    
     </>
   )
 }
