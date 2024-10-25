@@ -19,7 +19,7 @@ export const useFetch = (url) => {
     },[url]);
     
     const getDato = async() =>{ // funcion asincrona para dar datos  
-
+        await new Promise(resolve => setTimeout(resolve,1000))      // promesa que actua como un sleep(tarda sieto tiempo en cargar)
         const resp = await fetch(url); // url desde nustro componente 
 //si la respuesta es invalida envia el objeto con los siguentes valores 
         if(!resp.ok){
@@ -36,7 +36,8 @@ export const useFetch = (url) => {
         }
 
         const dato = await resp.json();//en cambio si la respueta es valida envia el dato a un objeto
-
+        console.log(dato);
+        
         setEstado({
             data:dato,
             loading:false,
