@@ -7,6 +7,7 @@ export const FocusScreen = () => {
 
     const refeBoton = () => {
         console.log(InputReferencia.current.value)// imprime el valor de lo que tiene input 
+        InputReferencia.current.focus()
     }
 
   return (
