@@ -14,7 +14,7 @@ function heavyStuff(numeroItera=100) {
 
 export const MemoHook = () => {
 
-    const { CHCounter, Suma } = useCounterMine(600)
+    const { CHCounter, Suma } = useCounterMine(700)
     const [ mostrar, setMostrar ] = useState(true)
     /* sintaxis de USEMEMO
     useMemo(() => first: valor que va devolver algo, [second:va hacer algo si las dependecias cambian])
