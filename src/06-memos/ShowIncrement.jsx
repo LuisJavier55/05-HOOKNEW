@@ -4,7 +4,7 @@
 import { memo } from "react";
 
 
-export const ShowIncrement = memo(({ incrementar }) => {
+export const ShowIncrement = memo(({ incrementar }) => { // funcionProps que recibe como argumento Increment
 
     console.log('se vuelve a repetir');
     
@@ -13,7 +13,9 @@ export const ShowIncrement = memo(({ incrementar }) => {
     <>
     <button
     className="btn btn-primary"
-    onClick={incrementar}
+    onClick={()=>{
+      incrementar(5) // al precionar tomara la funcionProps, el argumento se recibe en CallbackHook
+    }} 
     >
         INCREMENTAR
     </button>
