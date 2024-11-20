@@ -8,7 +8,7 @@ export const PokemonCard = ({id, nombre, sprites=[] }) => {
   const hRef = useRef()
   //obtner los datos de altura y anchura inicializando con 0 m
   const [caja, setCaja] = useState({height:0, width:0})
-// useLayoutEffect es similar a lo que es USEEFFECT ya que envia lo que se va ejecutar anetes de la renderizacion 
+// useLayoutEffect es similar a lo que es USEEFFECT ya que envia lo que se va ejecutar antes de la renderizacion 
   useLayoutEffect(()=>{
     	console.log(hRef.current.getBoundingClientRect());
       //desestructuracion de la anchura y altura 

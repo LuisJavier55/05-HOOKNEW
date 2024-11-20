@@ -11,7 +11,7 @@ export const Padre = () => {
     // const incrementar = ( num ) => {
     //     setValor( valor + num )
     // }
-
+    // usamos useCallback para que nuestra funcion pase solamente en el cambio o renderizacion
     const incrementar = useCallback((num)=>{
         setValor( (valor) => valor + num )
     },[])
@@ -22,7 +22,7 @@ export const Padre = () => {
             <p> Total: { valor } </p>
 
             <hr />
-
+            {/* se hace un mapeo de nustro array envuiandolas cada uno de nuestros valores como props, y convertirlos en botones */}
             {
                 numeros.map( n => (
                     <Hijo 

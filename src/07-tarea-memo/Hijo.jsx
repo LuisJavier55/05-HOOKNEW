@@ -6,16 +6,17 @@
 import  { memo } from "react";
 
 
-export const Hijo = memo(({ numero, incrementar }) => {
+export const Hijo = memo(({ numero, incrementar }) => { // props valor nuemro y funcion 
 
     console.log(`  Me volví a generar :(  ${numero} `);
 
     return (
         <button
             className="btn btn-primary mr-3"
-            onClick={ () => incrementar( numero ) }
+            onClick={ () => incrementar( numero ) } // se envia el argumento a nuestro padre donde esta nuestra funcion 
         >
-            { numero }
+            {/* Devuelve los numeros en botones  */}
+            { numero }  
         </button>
     )
 })
