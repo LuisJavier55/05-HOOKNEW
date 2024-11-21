@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Padre } from './07-tarea-memo/Padre'
-
+// import { Padre } from './07-tarea-memo/Padre'
+import './08-useReducer/intro-reducer'
 // import { CallbackHook } from './06-memos/CallbackHook'
 // import { MemoHook } from './06-memos/memorizeHook'
 // import { Memorize } from './06-memos/memorize'
@@ -15,6 +15,6 @@ import { Padre } from './07-tarea-memo/Padre'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Padre />
+    {/* <Padre /> */}
   </StrictMode>,
 )
