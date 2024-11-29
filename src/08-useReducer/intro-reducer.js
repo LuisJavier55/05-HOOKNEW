@@ -19,7 +19,7 @@ const estadoInicial = [{
         //! este paso es el ultimo 
         // se agregara una condicion para saber si nuestro nuevo estado llega, con nuestro accion creada (addTodoAction)
         // si nuestro tipo de accion es iagual ?
-        if (action.type === '[TODO] agregar todo'){ //si es verdadero manda la nueva vercion del estado con return 
+        if (action.type === '[TODO] agregar todo'){ //si es verdadero manda la nueva version del estado con return 
 
             //retorna el estado anterior(initiaState)con spread y el estado nuevo
             return[...state, action.payload]
